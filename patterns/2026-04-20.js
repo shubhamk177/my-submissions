@@ -6,7 +6,6 @@ class Config {
   set(k, v) { this.#settings[k] = v; }
   get(k)    { return this.#settings[k]; }
 }
-
 const cfg = Config.getInstance();
 cfg.set('theme', 'dark');
 console.log(Config.getInstance().get('theme')); // dark
